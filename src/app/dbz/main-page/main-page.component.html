@@ -1,0 +1,41 @@
+<h1>Dragon Ball Z</h1>
+<hr/>
+
+
+<div class="row">
+    <div class="col">
+        <h3>Players</h3>
+        <hr>
+        <ul>
+            <li *ngFor="let player of characters">{{ player.name }} - {{player.power | number}}</li>
+        </ul>
+    </div>
+
+    <div class="col">
+        <h3>Add</h3>
+        <!-- {{ newCharacter.name }} -->
+        <hr>
+
+        <!-- <form (submit)="add($event)"> old Way --- -->
+            <!-- have to install formModule -->
+        <form (ngSubmit)="add()"> 
+            <input 
+                type="text" 
+                placeholder="Player"
+                [(ngModel)]="newCharacter.name"
+                name="name"
+                />
+
+            <input 
+                type="number" 
+                placeholder="Power"
+                [(ngModel)]="newCharacter.power"
+                name="power"
+                />
+
+            <button type="submit">Add</button>
+        </form>
+
+    </div>
+</div>
+
