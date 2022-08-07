@@ -1,0 +1,25 @@
+<h1>{{ title }}</h1>
+
+<button (click)=" number1 = number1 +1"> +1 </button>
+<span> {{ number1 }} </span>
+<button (click)=" number1 = number1 -1"> -1 </button>
+
+
+<button (click)="sumar()"> +1 </button>
+<span> {{ number2 }} </span>
+<button (click)=" rest()"> -1 </button>
+
+
+<button (click)="acumulate(2)"> +2 </button>
+<span> {{ number3 }} </span>
+<button (click)=" acumulate(-2)"> 2 </button>
+
+<h3>Base is: {{ basei }}</h3>
+
+<button (click)="incrementBase()"> +5 </button>
+<button (click)=" decrementBase()"> -5 </button>
+
+<h3>Base is: {{ number }}</h3>
+
+<button (click)="operation(base)"> +{{base}} </button>
+<button (click)=" operation( -base)"> -{{base}} </button>
