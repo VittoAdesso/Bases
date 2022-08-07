@@ -1,0 +1,3 @@
+declararions: Siempre van los componentes creados de ese bloque o carpeta.
+Imports: vamos a colocar el módulo de la carpeta para que sea utilizado fuera de ella.
+expoerts!!!! aquí es donde colocamos los componentes que queremos que se utilicen fuera, sin ésto no podemos usarlos.
