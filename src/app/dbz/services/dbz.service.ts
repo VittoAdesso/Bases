@@ -7,7 +7,7 @@ import { Character } from '../interfaces/dbz.interfaces';
 
 export class DbzService {
 
-  characters: Character[] = [
+ private _characters: Character[] = [
     {
       name: 'Goku',
       power: 10000
@@ -19,7 +19,8 @@ export class DbzService {
   ] 
   
   constructor() {  }
-  get charactersGet() : Character[] {
+
+  get characters() : Character[] {
     return[...this._characters]
   }
 
