@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { MainPageComponent } from './main-page/main-page.component';
 import { CharactersComponent } from './characters/characters.component';
 import { FormCharactersComponent } from './form-characters/form-characters.component';
+import { DbzService } from './services/dbz.service';
 
 
 @NgModule({
@@ -19,6 +20,9 @@ import { FormCharactersComponent } from './form-characters/form-characters.compo
   imports: [
     CommonModule, 
     FormsModule
+  ], 
+  providers: [
+    DbzService
   ]
 })
 export class DbzModule { }
